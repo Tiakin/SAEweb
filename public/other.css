@@ -1,0 +1,48 @@
+nav {
+    justify-content: flex-end;
+}
+
+@media (min-width:701px) {
+    /* Pc */
+    .cadre1 {
+        display: none;
+    }
+
+    .cadre2 {
+        grid-area: 1/2/2/3;
+    }
+
+    .cadre3 {
+        grid-area : 1/1/2/2;
+    }
+
+}
+
+@media (max-width:700px) {
+    /* Mobile */
+
+    body {
+        grid-template-rows: 100px 20px 1fr;
+    }
+
+    header {
+        grid-area: 1/1/2/2;
+        justify-content: start;
+    }
+
+    main {
+        grid-template-rows: auto auto;
+
+    }
+
+    
+
+    .cadre2 {
+        grid-area : 1/2/2/3;
+    }
+
+    .cadre3 {
+        grid-area: 1/1/2/2;
+    }
+
+}
