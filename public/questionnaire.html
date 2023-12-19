@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Transport Doux</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="other.css">
+    <link rel="shortcut icon" href="logo.png">
+  </head>
+  <body>
+    <header>
+        <img src="logo.png" alt="Logo" width="64">
+        <h1>Bus</h1>
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+    <hr>
+    <main>
+        <h1>Nous contacter</h1>
+	
+        <form method="post" action="https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/intro-web/_static/formproc/debug">
+          
+            <div>
+                <label for="nom">Votre nom</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+            
+            
+            <div>
+                <label for="email">Votre e-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            
+            <div>
+                <label for="sujet">Sujet</label>
+                <select name="sujet" id="sujet" required>
+                <option value="probleme">Problème avec le site</option>
+                <option value="idee">idée par rapport au site</option>
+                <option value="autre">Autre...</option>
+                </select>
+            </div>
+            
+            
+            <div>
+                <label for="message">Votre message</label>
+                <textarea rows="10" cols="50" id="message" name="message" required></textarea>
+            </div>
+            
+            
+            <div>
+                <button type="submit">Envoyer mon message</button>
+            </div>
+            
+        </form>
+    </main>
+  </body>
+</html>
