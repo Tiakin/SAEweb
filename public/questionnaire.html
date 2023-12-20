@@ -21,39 +21,34 @@
         <h1>Nous contacter</h1>
 	
         <form method="post" action="https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/intro-web/_static/formproc/debug">
-          
-            <div>
-                <label for="nom">Votre nom</label>
-                <input type="text" id="nom" name="nom" required>
-            </div>
+          <table>
+              <tr>
+                  <td><label for="nom">Votre nom</label></td>
+                  <td><input type="text" id="nom" name="nom" required></td>
+              </tr>
             
+              <tr>
+                  <td><label for="email">Votre e-mail</label></td>
+                  <td><input type="email" id="email" name="email" required></td>
+              </tr>
             
-            <div>
-                <label for="email">Votre e-mail</label>
-                <input type="email" id="email" name="email" required>
-            </div>
+              <tr>
+                  <td><label for="sujet">Sujet</label></td>
+                  <td>
+                    <select name="sujet" id="sujet" required>
+                      <option value="probleme">Problème avec le site</option>
+                      <option value="idee">idée par rapport au site</option>
+                      <option value="autre">Autre...</option>
+                    </select>
+                </td>
+              </tr>
             
-            
-            <div>
-                <label for="sujet">Sujet</label>
-                <select name="sujet" id="sujet" required>
-                <option value="probleme">Problème avec le site</option>
-                <option value="idee">idée par rapport au site</option>
-                <option value="autre">Autre...</option>
-                </select>
-            </div>
-            
-            
-            <div>
-                <label for="message">Votre message</label>
-                <textarea rows="10" cols="50" id="message" name="message" required></textarea>
-            </div>
-            
-            
-            <div>
-                <button type="submit">Envoyer mon message</button>
-            </div>
-            
+              <tr>
+                  <td><label for="message">Votre message</label></td>
+                  <td><textarea rows="10" cols="50" id="message" name="message" required></textarea></td>
+              </tr>
+          </table>
+          <button class="button" type="submit">Envoyer mon message</button>  
         </form>
     </main>
   </body>
